@@ -43,6 +43,15 @@ class CacheManager: NSObject {
     }
     
     // MARK:- Local Methods
+    
+    private func getFilteredFilename(_ filename:String) -> String {
+        var newFilename = filename.replacingOccurrences(of: "://", with: "_", options: .literal, range: nil)
+        newFilename = newFilename.replacingOccurrences(of: "/", with: "_", options: .literal, range: nil)
+        
+        return newFilename
+    }
+    
+    // MARK:- Search in Cache
 
     // 메모리 캐시 를 검색 하고, 파일 캐시를 검색 한다.
     private func getCachedImage(_ filename:String) -> UIImage? {
@@ -87,8 +96,8 @@ class CacheManager: NSObject {
                     NSLog("Couldn't create document directory")
                 }
             }
-
-            let newFilename = filename.replacingOccurrences(of: "/", with: "_", options: .literal, range: nil)
+            
+            let newFilename = getFilteredFilename(filename)
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
             let fileURL = documentsURL.appendingPathComponent("\(Storage.cachePath)/\(newFilename)")
         
@@ -101,7 +110,8 @@ class CacheManager: NSObject {
     }
     
     private func getImageFile(_ filename:String) -> UIImage? {
-        let newFilename = filename.replacingOccurrences(of: "/", with: "_", options: .literal, range: nil)
+        
+        let newFilename = getFilteredFilename(filename)
         let path = "\(Storage.cachePath)/\(newFilename)"
         
         guard let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
