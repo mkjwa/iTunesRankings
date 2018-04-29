@@ -7,3 +7,4 @@ target 'iTunesRankings' do
 
     pod 'ObjectMapper', '~> 3.1'
 end
+
