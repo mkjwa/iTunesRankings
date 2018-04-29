@@ -15,6 +15,7 @@ class TitleAreaView: UIView {
     
     @IBOutlet var ratingLabel: UILabel!
     @IBOutlet var ratingCountLabel: UILabel!
+    
     @IBOutlet var categoryLabel: UILabel!
     @IBOutlet var ageLabel: UILabel!
 
@@ -27,8 +28,8 @@ class TitleAreaView: UIView {
     open func setInfo(title:String, company:String, ratings:Float, count:Int, category:String, age:String) {
         self.titleLabel.text = title
         self.companyLabel.text = company
-        self.ratingLabel.text =  NSString(format: "%.1f", ratings) as String
-        self.ratingCountLabel.text = "\(count) Ratings"
+        self.ratingLabel.text =  NSString(format: "Avg. %.1f", ratings) as String
+        self.ratingCountLabel.text = "\(count.withSeparator) Ratings"
         self.categoryLabel.text = category
         self.ageLabel.text = age
     }

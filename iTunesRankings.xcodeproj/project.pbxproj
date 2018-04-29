@@ -36,6 +36,7 @@
 		FAD3AFF920948EB200801FD9 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3AFF820948EB200801FD9 /* CacheManager.swift */; };
 		FAD3AFFD20948F7200801FD9 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3AFFC20948F7200801FD9 /* UIImageView+Extension.swift */; };
 		FAD3B0002094902200801FD9 /* CacheObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3AFFF2094902200801FD9 /* CacheObject.swift */; };
+		FAD3B002209545D000801FD9 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3B001209545D000801FD9 /* Int+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		FAD3AFF820948EB200801FD9 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		FAD3AFFC20948F7200801FD9 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		FAD3AFFF2094902200801FD9 /* CacheObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheObject.swift; sourceTree = "<group>"; };
+		FAD3B001209545D000801FD9 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 				FAC9CDEC209311BB0007AEAC /* UITableViewCell+Extension.swift */,
 				FAD3AFED2094609000801FD9 /* UIView+Extension.swift */,
 				FAD3AFF420948BA100801FD9 /* String+Extension.swift */,
+				FAD3B001209545D000801FD9 /* Int+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -320,7 +323,6 @@
 				FA0AF0FD20918A1600449917 /* Frameworks */,
 				FA0AF0FE20918A1600449917 /* Resources */,
 				E14AC5DCCE5A14633664BB0A /* [CP] Embed Pods Frameworks */,
-				AC169994B03503489C5FED25 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -459,21 +461,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AC169994B03503489C5FED25 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTunesRankings/Pods-iTunesRankings-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E14AC5DCCE5A14633664BB0A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -508,6 +495,7 @@
 				FAD3AFF920948EB200801FD9 /* CacheManager.swift in Sources */,
 				FAC9CDF420944BBA0007AEAC /* ScreenshotView.swift in Sources */,
 				FAD3AFFD20948F7200801FD9 /* UIImageView+Extension.swift in Sources */,
+				FAD3B002209545D000801FD9 /* Int+Extension.swift in Sources */,
 				FAC9CDF720944DB20007AEAC /* ScreenshotViewController.swift in Sources */,
 				FAD3AFF020946FE300801FD9 /* DescriptionView.swift in Sources */,
 				FAC9CDE920930E350007AEAC /* AppListViewController.swift in Sources */,

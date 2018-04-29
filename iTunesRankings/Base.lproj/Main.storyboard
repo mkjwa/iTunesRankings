@@ -199,10 +199,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ratings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ll-cW-eqq" userLabel="Label - Ratings">
-                                                <rect key="frame" x="12" y="116" width="80" height="19.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="m3M-4J-E1q"/>
-                                                </constraints>
+                                                <rect key="frame" x="12" y="115.5" width="50.5" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -259,6 +256,7 @@
                                             <constraint firstAttribute="trailing" secondItem="mSt-oH-MgQ" secondAttribute="trailing" constant="12" id="EQR-PM-mEd"/>
                                             <constraint firstItem="Q4F-Ni-sYs" firstAttribute="leading" relation="lessThanOrEqual" secondItem="7yE-4d-Pd3" secondAttribute="trailing" constant="63" id="GVL-Ge-QpC"/>
                                             <constraint firstItem="JnP-k2-PuI" firstAttribute="leading" secondItem="m95-h7-dwb" secondAttribute="trailing" constant="15" id="Gdc-Uv-urn"/>
+                                            <constraint firstItem="7yE-4d-Pd3" firstAttribute="leading" relation="lessThanOrEqual" secondItem="3Ll-cW-eqq" secondAttribute="trailing" constant="75.5" id="GtO-nk-lBz"/>
                                             <constraint firstAttribute="trailing" secondItem="Q4F-Ni-sYs" secondAttribute="trailing" constant="22" id="Lw1-JQ-CIR"/>
                                             <constraint firstAttribute="bottom" secondItem="D2Q-3E-GUl" secondAttribute="bottom" constant="6" id="Qaj-4Q-hv8"/>
                                             <constraint firstItem="D2Q-3E-GUl" firstAttribute="top" secondItem="Q4F-Ni-sYs" secondAttribute="bottom" constant="2" id="Scc-rh-ZwY"/>
@@ -270,7 +268,6 @@
                                             <constraint firstItem="m95-h7-dwb" firstAttribute="leading" secondItem="t8v-x3-FSe" secondAttribute="leading" constant="12" id="hYf-G3-3FF"/>
                                             <constraint firstAttribute="bottom" secondItem="7Ro-Rl-Quq" secondAttribute="bottom" constant="6" id="hjv-kZ-L4e"/>
                                             <constraint firstItem="JnP-k2-PuI" firstAttribute="top" secondItem="CWF-yc-MzA" secondAttribute="bottom" constant="8" id="kix-jh-ddI"/>
-                                            <constraint firstItem="7yE-4d-Pd3" firstAttribute="leading" relation="lessThanOrEqual" secondItem="3Ll-cW-eqq" secondAttribute="trailing" constant="46" id="kmo-ou-Bg0"/>
                                             <constraint firstAttribute="bottom" secondItem="7yE-4d-Pd3" secondAttribute="bottom" constant="25" id="l6x-0L-Ccb"/>
                                             <constraint firstAttribute="bottom" secondItem="Q4F-Ni-sYs" secondAttribute="bottom" constant="23" id="qrg-ZG-tPP"/>
                                             <constraint firstItem="m95-h7-dwb" firstAttribute="top" secondItem="t8v-x3-FSe" secondAttribute="top" constant="17" id="rez-mH-IkL"/>
